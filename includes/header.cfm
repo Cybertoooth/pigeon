@@ -3,7 +3,7 @@
     <head>
         <title>Pigeon</title>
        <link rel="stylesheet" href="https://use.typekit.net/kvp5hfl.css">
-       <link rel="stylesheet" href="/static/css/main.css">
+       <link rel="stylesheet" href="../static/css/main.css">
     </head>
     <body>
       <div class="container">
@@ -15,3 +15,4 @@
                <header>
                  <cfinclude template="../includes/menu.cfm">
                </header>
+          
