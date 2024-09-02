@@ -1,4 +1,5 @@
 <cfinclude template="../includes/header.cfm">
+
 <div id="inbox">
    <div id="message-sidebar">
       <header>
@@ -80,4 +81,6 @@
     </div>
    </div>
 </div>
+
+
 <cfinclude template="../includes/footer.cfm">
