@@ -440,7 +440,7 @@ width: 65%;
 }
 
 #message p {
-font: normal 400 1em  "mr-eaves-sans", sans-serif;
+font: normal 400 1em "mr-eaves-sans", sans-serif;
 color: #5D5D5D;    
 line-height: 1.6em;
 }
@@ -468,6 +468,8 @@ margin: 0 0 15px 0;
 
 
 /* contact */
+
+
 
 
 
@@ -513,7 +515,88 @@ width: 35%;
 
 /* settings */
 
+#settings {
+margin: 7% auto 0 auto;    
+width: 50%;
+}
 
+#settings img {
+display: block;
+margin: 0 auto 15px auto;
+border: 3px solid #8d8d8d;
+border-radius: 50px;
+padding: 2px;
+}
+
+#settings h3 {
+text-align: center; 
+text-transform: uppercase; 
+font: normal 200 1.8em "mr-eaves-sans", sans-serif;
+color: #5D5D5D;   
+}
+
+#settings form {
+display: block;
+width: 75%;    
+margin: 25px auto 0 auto; 
+}
+
+#settings form input[type='text']:last-of-type {
+width: 93%;
+}
+
+#settings form input::placeholder, #settings textarea {
+padding-left: 5px;
+}
+
+#settings textarea {
+color:#5D5D5D;    
+font: normal 200 0.9em "mr-eaves-sans", sans-serif;
+padding: 5px 0 0 5px;
+resize: none;
+outline: none;
+}
+
+#settings form input {
+width: 45%;
+height: 35px;
+margin: 15px 0 0 15px;
+border: 1px solid rgb(204, 204, 204);
+padding-left: 5px;
+outline: transparent;
+font: normal 200 0.9em "mr-eaves-sans", sans-serif;
+color:#5D5D5D;
+}
+
+#settings select {
+width: 93.5%;
+height: 35px;
+margin: 15px 0 0 15px;
+border: 1px solid rgb(204, 204, 204);
+outline: transparent;
+padding-left: 5px;
+font: normal 200 0.9em "mr-eaves-sans", sans-serif;
+color:#717171;
+}
+
+textarea {
+width: 93.5%;
+height: 100px;
+margin: 15px 0 0 15px;
+border: 1px solid rgb(204, 204, 204);
+}
+
+#settings form button {
+width: 150px;
+height: 45px;    
+border-radius: 15px;
+background:#bd0d6e;
+border: none;  
+color:#FAFAFA;  
+margin: 25px 0 0 15px;
+font: normal 200 0.9em "mr-eaves-sans", sans-serif;
+cursor: pointer;
+}
 
 /*********/
 

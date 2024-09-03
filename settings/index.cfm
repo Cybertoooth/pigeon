@@ -67,7 +67,7 @@
          <option value="invisible">Invisible</option>
       </select>
       <textarea name="bio" placeholder="About me"></textarea><br>
-      <button type="button" id="submit">
+      <button type="button" id="submit">Save changes</button>
    </form>
 </div>
 <cfinclude template="../includes/footer.cfm">
