@@ -1,6 +1,6 @@
     <div class="top-menu">
         <div class="search">
-          <img src="../static/images/search.png" alt="Search icon image">
+          <a href=""><img src="../static/images/search.png" alt="Search icon image"></a>
         </div>
         <div class="tab-menu">
           <menu>

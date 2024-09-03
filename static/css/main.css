@@ -152,7 +152,7 @@ cursor: pointer;
 .top-menu {
 display: flex;
 flex-direction: row;
-justify-items: center;
+justify-content: baseline;
 padding: 1% 0;
 width: 90%;
 height: 50px;
@@ -164,15 +164,26 @@ border-bottom: 1px solid var(--borderColor);
 
 .top-menu .search {
 margin: 10px 0 0 25px;
+width: 25%;
+}
+
+#search {  
+width: 90%;
+height: 35px;
+border: none;
+border-bottom: 1px solid rgb(204, 204, 204);  
+animation: slideRight 0.8s backwards 0.5s;
+margin-left: 25px;
+outline: transparent
 }
 
 .tab-menu {
-width: 340px;
+width: 340px !important;
 height: 40px;
 border: 1px solid var(--borderColor);
 border-radius: 20px;
 padding: 0 15px;
-margin-left: 38%;
+margin-left: 15%;
 }
 
 .tab-menu menu {
@@ -471,7 +482,7 @@ justify-content: baseline;
 
 
 
-/* contact */
+/* contacts */
 
 
 
@@ -796,7 +807,6 @@ padding-right: 300px;
 padding-right: 280px;
 }
     
-
 #document-container ul li {
 display: inline;
 list-style-type: none;
@@ -817,9 +827,6 @@ padding-right: 5px;
 text-decoration: none;
 color: #5D5D5D;
 }
-
-
-
 
 /*********/
 
@@ -932,6 +939,14 @@ z-index: -5;
 
 /* animations */
 
+@keyframes slideRight {
+   from {
+      width: 0;
+   }
+   to {
+      width: 90%;
+   }
+}
 
 
 /*********/
