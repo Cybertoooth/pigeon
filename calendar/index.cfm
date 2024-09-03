@@ -1,4 +1,5 @@
 <cfinclude template="../includes/header.cfm">
+<div id="calendar-container">
 <div class="sidebar">
   <div id="calendar-scheduler">
      <div id="date">
@@ -35,6 +36,7 @@
      </div>
   </div>
 </div>
-<div class="calendar">
+<div id="calendar">
+</div>
 </div>
 <cfinclude template="../includes/footer.cfm">
