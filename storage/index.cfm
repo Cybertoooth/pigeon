@@ -6,8 +6,10 @@
        <li><img src="../static/images/hard-drive-gray.png" alt="A hard drive icon"><span>2GB</span>USED 1GB</li>
      </ul>
      <div id="percentage-container">
-       <div class="percent-usage-item">85%</div>
-       <div class="percent-usage-item">15%</div>
+        <div id="percentage">
+          <div class="percent-usage-item"></div>
+          <div class="percent-usage-item"></div>
+        </div>  
        <ul>
          <li><span>85% photos</span>1,234 photos <span>15% music</span> 1,234 songs</li>
        </ul>
@@ -34,31 +36,37 @@
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
+         <li><a href="">&vellip;</a></li>
        </ul>
     </div>   
    </div>

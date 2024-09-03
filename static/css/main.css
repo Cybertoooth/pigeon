@@ -463,7 +463,11 @@ margin: 0 0 15px 0;
 
 /*********/
 
-
+#calendar-container {
+display: flex;
+flex-direction: row;
+justify-content: baseline;    
+}
 
 
 
@@ -480,20 +484,149 @@ margin: 0 0 15px 0;
 /* calendar */
 
 #calendar-container {
-margin-top: 5%;  
-border: 1px solid red;
+margin-top: 4%;  
 width: 100%;
 height: 90vh;
+overflow: hidden;
+}
+
+#calendar-container .sidebar {
+width: 20%;
+height: 90vh;
+padding: 0 !important;
+}
+
+#calendar-scheduler {
+padding: 1%;
+margin-top: 50px;
+}
+
+#calendar-scheduler #date span {
+font: normal 100 2em "mr-eaves-modern", sans-serif;
+color: #5D5D5D; 
+text-align: center;
+display: block;
+text-transform: uppercase;
+}
+
+#calendar-scheduler #date h2 {
+font: normal 900 3.4em "mr-eaves-xl-modern", sans-serif;
+color: #5D5D5D; 
+text-align: center;
+}
+
+#calendar-schedule h4 {
+font: normal 100 1em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+text-align: left;
+margin: 10px 0;
+padding: 5px 0;
+border-bottom: 1px solid rgb(229, 228, 228);
+}
+
+#calendar-schedule {
+width: 98%;
+margin-top: 25px;
+}
+
+.bubble {  
+color:#17E2CA;
+font-size: 2em;
+}
+
+.calendar-flex {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;    
+margin: 25px 0;
+padding: 10px 0;
+border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.calendar-flex div span:last-of-type {
+background: none;
+border-radius: 0;
+}
+
+.calendar-flex div p:first-of-type {
+font: normal 900 0.8em "mr-eaves-xl-modern", sans-serif;
+color: #5D5D5D;
+}
+
+.calendar-flex div p:first-of-type span {
+font: normal 100 1em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+float: right;
+display: block;
+}
+
+.calendar-flex div p:nth-child(2) {
+font: normal 100 1em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+margin: 5px 0;
+}
+
+.calendar-flex div p:nth-child(3) {
+font: normal 900 1em "mr-eaves-sans", sans-serif;
+color: #424242;
+margin: 5px 15px 5px 0 ;
+}
+
+.calendar-flex div p:last-of-type span  {
+margin-left: 25px; 
+}
+
+.calendar-flex div p span a {
+font: normal 900 1em "mr-eaves-sans", sans-serif;
+color: #1c1c1c;
+text-decoration: underline;    
+}
+
+#add-event {
+margin:25px 0 0  25px;
+background: #27C463;
+width: 150px;
+height: 40px;
+border-radius: 15px;
+border: none;
+text-transform: uppercase;
+font: normal 900 0.8em "mr-eaves-xl-modern", sans-serif;
+color: #fafafa;
+line-height: 3.2em !important;
+cursor: pointer;
 }
 
 #current {
+display: block;    
 background: #bd0d6e;   
 border-radius: 25px;
-padding: 10px;
 color: #fafafa; 
-width: 15px;
-height: 15px;
+width: 25px;
+height: 25px;
 text-align: center;
+}
+
+#calendar {  
+width: 100%; 
+padding: 50px;
+}
+
+#calendar h2 {
+font: normal 100 4em "mr-eaves-modern", sans-serif;
+color: #5D5D5D; 
+text-transform: uppercase;
+}
+
+#calendar ul li {
+display: inline-block;
+list-style-type: none;    
+width: 9%;
+height: 9vh;
+border: 1px solid rgb(229, 228, 228);
+padding: 25px;
+line-height: 1.5em !important;
+font: normal 100 1.2em "mr-eaves-modern", sans-serif;
+color: #5D5D5D; 
 }
 
 #footer-calendar-menu {
@@ -503,10 +636,188 @@ justify-content: center;
 width: 35%;    
 }
 
+
+
 /*********/
 
 
 /* storage */
+
+#storage {
+margin-top: 4.8%;  
+width: 100%;
+height: 90vh;
+overflow: hidden;
+display: flex;
+flex-direction: row;
+justify-content: baseline;   
+}
+
+#percentage {
+border-radius: 25px;
+width: 100%;
+height: 25px;
+background: #EBEBEB;
+display: flex;
+flex-direction: row;
+justify-content: baseline;
+margin: 25px 0;
+}
+
+.percent-usage-item:first-of-type {
+background:#bd0d6e;
+width: 35%;
+height: 25px;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+
+.percent-usage-item:last-of-type {  
+background: #FAC5C5;
+width: 15%;
+height: 25px;
+}
+
+#storage .sidebar {
+width: 15%;
+height: 90vh;
+}
+
+#storage .sidebar ul {
+margin-top: 25px;    
+}
+
+#storage .sidebar h3 {
+font: normal 100 1em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+text-align: left;
+margin: 10px 0;
+padding: 5px 0;
+border-bottom: 1px solid rgb(229, 228, 228);
+text-transform: uppercase;
+}
+
+#storage .sidebar ul li {
+font: normal 900 0.8em "mr-eaves-modern", sans-serif;
+color: #5D5D5D; 
+text-transform: uppercase;
+}
+
+#storage .sidebar ul li span {
+font: normal 900 1.2em "mr-eaves-xl-modern", sans-serif;
+color: #5D5D5D; 
+text-transform: uppercase;
+padding: 0 5px;
+}
+
+#storage .sidebar ul:last-child li span {
+font: normal 900 0.8em "mr-eaves-xl-modern", sans-serif;
+color: #5D5D5D; 
+text-transform: uppercase;
+text-decoration: underline;
+}
+
+#storage .sidebar ul li {
+list-style-type: none;
+}    
+
+#storage .sidebar img {
+width: 21px;
+height: 21px;
+margin: 0px 10px 0 0;
+}
+
+#storage .right-column {
+padding: 50px;
+width: 85%;
+}
+
+#storage .right-column header {
+width: 60%;
+margin: 0 auto;
+}
+
+#storage .right-column select {
+width: 200px;
+border-radius: 10px;
+border: 1px solid rgba(212, 212, 212, 0.7);
+padding-left: 10px;
+font: normal 400 0.9em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+}
+
+#storage .right-column header h3 {
+font: normal 100 1.8em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+text-align: left;
+text-transform: uppercase;
+}
+
+#storage .right-column #document-container header {
+width: 100%;     
+border: none; 
+border-bottom: 1px solid rgba(212, 212, 212, 0.7);
+}
+
+#document-container {
+border: 1px solid rgba(212, 212, 212, 0.7);
+border-radius: 25px;;
+padding: 10px;
+width: 60%;
+margin: 4% auto 0 auto;
+}
+
+#document-container header ul {
+margin: 10px 0;
+padding: 5px 0;
+border-bottom: 1px solid rgba(212, 212, 212, 0.7);
+}
+
+#document-container ul {
+margin: 10px 0;
+padding: 5px 0 10px 0;
+border-bottom: 1px solid rgba(212, 212, 212, 0.7);
+}
+
+#document-container ul:last-of-type {
+padding-bottom: 15px;
+border-bottom:none;
+}
+
+#document-container header ul li {
+display: inline;
+list-style-type: none;
+font: normal 700 1em "mr-eaves-xl-modern", sans-serif;
+color: #5D5D5D;
+padding-right: 300px;
+}
+
+#document-container header ul li:last-of-type {
+padding-right: 280px;
+}
+    
+
+#document-container ul li {
+display: inline;
+list-style-type: none;
+font: normal 100 1em "mr-eaves-modern", sans-serif;
+color: #5D5D5D;
+padding-right: 260px;
+}
+
+#document-container ul li:nth-of-type(2) {
+padding-right: 175px;
+}
+
+#document-container ul li:last-of-type {
+padding-right: 5px;
+}
+
+#document-container ul li:last-of-type a {
+text-decoration: none;
+color: #5D5D5D;
+}
+
 
 
 
@@ -580,7 +891,7 @@ color:#717171;
 }
 
 textarea {
-width: 93.5%;
+width: 93%;
 height: 100px;
 margin: 15px 0 0 15px;
 border: 1px solid rgb(204, 204, 204);

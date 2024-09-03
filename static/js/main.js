@@ -24,15 +24,15 @@ const currentDay = dateObj.toLocaleString("en", {weekday: "long"});
 const currentDate = dateObj.getDate();
 const firstDayOfTheMonth = new Date(dateObj.getFullYear(), dateObj.getMonth(), 1).getDate();
 const lastDayOfTheMonth = new Date(dateObj.getFullYear(), dateObj.getMonth() + 1, 0).getDate();
+document.querySelector('#date span').innerHTML=currentDay;
+document.querySelector('#date h2').innerHTML=currentDate;
 
 // all the dates of the month up to the current date
 function pastDatesForCurrentMonth(){
     let pastDates = 0;
     if(firstDayOfTheMonth < currentDate){
        pastDates = possibleDaysInAMonth.filter((d) => {
-          if(d <= currentDate){
-            return d;
-          }
+          if(d <= currentDate) return d;
        })
     }
    return pastDates[pastDates.length-1];
@@ -40,9 +40,7 @@ function pastDatesForCurrentMonth(){
 
 function getAllDaysOfCurrentMonth(lastDay){
     let days = possibleDaysInAMonth.filter((d) => {
-        if(d <= lastDay){
-           return d;
-        }
+        if(d <= lastDay) return d;
     }) 
     return days
 }
@@ -56,10 +54,17 @@ function calendarComponent(){
    const daysInCurrentMonth = getAllDaysOfCurrentMonth(lastDayOfTheMonth);
    daysInCurrentMonth.forEach((d) => {
       var li =  document.createElement('li');
-      var liText = document.createTextNode(d);
-      li.appendChild(liText);
       ul.appendChild(li);
-      if(d == daysToCurrentDay) li.setAttribute('id', 'current');
+      if(d == daysToCurrentDay) {
+         var span = document.createElement('span');
+         var spanText = document.createTextNode(d);
+         span.setAttribute('id', 'current');
+         span.appendChild(spanText);
+         li.appendChild(span);
+      } else {
+         var liText = document.createTextNode(d);
+         li.appendChild(liText);
+      }
    })
    document.querySelector('#calendar').appendChild(h2);
    document.querySelector('#calendar').appendChild(ul);
