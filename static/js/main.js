@@ -32,8 +32,6 @@ const currentDate = dateObj.getDate();
 const firstDayOfTheMonth = new Date(dateObj.getFullYear(), dateObj.getMonth(), 1).getDate();
 const lastDayOfTheMonth = new Date(dateObj.getFullYear(), dateObj.getMonth() + 1, 0).getDate();
 
-
-
   document.querySelector('#date span').innerHTML=currentDay;
   document.querySelector('#date h2').innerHTML=currentDate;
 
@@ -119,14 +117,16 @@ calendarComponent();
 
 /** event listeners */
 
-if(window.location.pathname === '/pigeon/contacts/'){
+
    searchButton.addEventListener('click', (e) => {
        e.preventDefault();
-       searchField.style.display='inline';
-       document.querySelector('.search').appendChild(searchField);
-
+       if(searchField.style.display == 'inline'){
+          searchField.style.display='none';
+       } else {
+          searchField.style.display='inline';
+          document.querySelector('.search').appendChild(searchField);
+       }
    })
-}
 
 
 

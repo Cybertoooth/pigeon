@@ -34,6 +34,7 @@
      </div>
    </div>
    <div id="contact">
+      <img src="../static/images/edit-user-light.png" alt="">
       <img src="../static/images/default.png" alt="">
       <p>Joan Williamson</p>  
       <p>Product Designer</p>
@@ -50,7 +51,6 @@
       </div> 
    </div>
       <div id="add-contact">
-      <img src="../static/images/edit-user-light.png" alt=""> 
       <img src="../static/images/default.png" alt="">
       <h3>ADD CONTACT</h3>
        <form method="post">
