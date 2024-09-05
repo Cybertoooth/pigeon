@@ -3,6 +3,7 @@ const contacts = document.querySelector('#contacts');
 const storage = document.querySelector('#storage');
 const calendar = document.querySelector('#calendar');
 const searchButton = document.querySelector('.search a');
+const documentItems = document.querySelectorAll('.document-item');
 const searchField = document.createElement('input');
 searchField.setAttribute('type', 'text');
 searchField.setAttribute('id', 'search');
@@ -127,6 +128,72 @@ calendarComponent();
           document.querySelector('.search').appendChild(searchField);
        }
    })
+
+
+
+/*******************/
+
+
+/** menu */
+
+function optionMenu(el) {
+  const optionMenu = document.createElement('div');
+  const menu = document.createElement('menu');
+  const openLi = document.createElement('li');
+  const downloadLi = document.createElement('li');
+  const renameLi = document.createElement('li');
+  const getInfoLi = document.createElement('li');
+  const deleteLi = document.createElement('li');
+  const openTextLink = document.createElement('a');
+  const downloadTextLink = document.createElement('a');
+  const renameTextLink = document.createElement('a');
+  const getInfoTextLink = document.createElement('a');
+  const deleteTextLink = document.createElement('a');
+  const openText = document.createTextNode('Open');
+  const downloadText = document.createTextNode('Download');
+  const renameText = document.createTextNode('Rename');
+  const getInfoText = document.createTextNode('Get info');
+  const deleteText = document.createTextNode('Delete file');
+  optionMenu.setAttribute('id', 'option-menu');
+  openTextLink.setAttribute('href', '');
+  downloadTextLink.setAttribute('href', '');
+  renameTextLink.setAttribute('href', '');
+  getInfoTextLink.setAttribute('href', '');
+  deleteTextLink.setAttribute('href', '');
+  openTextLink.appendChild(openText);
+  openLi.appendChild(openTextLink);
+  menu.appendChild(openLi);
+  downloadTextLink.appendChild(downloadText);
+  downloadLi.appendChild(downloadTextLink);
+  menu.appendChild(downloadLi);
+  renameTextLink.appendChild(renameText);
+  renameLi.appendChild(renameTextLink);
+  menu.appendChild(renameLi);
+  getInfoTextLink.appendChild(getInfoText);
+  getInfoLi.appendChild(getInfoTextLink);
+  menu.appendChild(getInfoLi);
+  deleteTextLink.appendChild(deleteText);
+  deleteLi.appendChild(deleteTextLink);
+  menu.appendChild(deleteLi);
+  optionMenu.appendChild(menu);
+  document.querySelector(el).appendChild(optionMenu);
+} 
+
+
+documentItems.forEach((item) => {
+   item.addEventListener('click', (e) => {
+      e.preventDefault();
+      let menu = document.querySelector('#option-menu')
+      if(!menu){
+         let l = e.target.parentNode;
+         let ul = l.parentNode;
+         let div = ul.parentNode;
+         let divId = `#${div.id}`
+         optionMenu(divId);
+      }
+   })
+})
+
 
 
 

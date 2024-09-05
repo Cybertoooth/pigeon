@@ -123,8 +123,8 @@ height: 24px;
 
 #trash-can {
 width: 21px;
-height: 24px; 
-margin: 13px 0 0 13px;    
+height: 21px; 
+margin: 14px 0 0 13px;    
 }
 
 #video {
@@ -580,19 +580,20 @@ text-align: left;
 
 #contact p:first-of-type {
 font: normal 800 1em "mr-eaves-xl-modern", sans-serif;
-color: #5D5D5D; 
+color: #5D5D5D;
+margin-left: 165px;  
 }
 
 #contact p:nth-last-child(2) {
 font: normal 200 0.9em "mr-eaves-sans", sans-serif;
 color: #5D5D5D;
-margin-left: 175px;     
+margin-left: 185px;     
 }
 
 #contact p:nth-last-child(3) {
 font: normal 200 0.9em "mr-eaves-sans", sans-serif;
 color: #5D5D5D;
-margin-left: 165px; 
+margin-left: 175px; 
 }
 
 #contact-details h4 {
@@ -974,6 +975,7 @@ border: 1px solid rgba(212, 212, 212, 0.7);
 border-radius: 25px;;
 padding: 10px;
 width: 60%;
+height: 350px;
 margin: 4% auto 0 auto;
 }
 
@@ -1025,6 +1027,30 @@ padding-right: 5px;
 #document-container ul li:last-of-type a {
 text-decoration: none;
 color: #5D5D5D;
+}
+
+#option-menu {
+background: #fff;
+width: 15%;
+height: 200px;
+padding: 15px;
+border-radius: 25px;
+filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.3));  
+position: relative;
+right: -800px; 
+top: -250px;
+}
+
+menu li {
+list-style-type: none; 
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
+}
+
+menu li a {
+font: normal 100 0.9em "mr-eaves-sans", sans-serif;
+color: #5D5D5D; 
+text-decoration: none;
 }
 
 /*********/

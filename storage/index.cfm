@@ -36,37 +36,38 @@
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
+         <li><a href="" class="document-item">&vellip;</a></li>
+       </ul>
+
+        <ul>
+         <li>Phoenix-1901.mp3</li>
+         <li>Audio</li>
+         <li>An hour ago</li>
+         <li><a href="" class="document-item">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
+         <li><a href="" class="document-item">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
+         <li><a href="" class="document-item">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
+         <li><a href="" class="document-item">&vellip;</a></li>
        </ul>
         <ul>
          <li>Phoenix-1901.mp3</li>
          <li>Audio</li>
          <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
-       </ul>
-        <ul>
-         <li>Phoenix-1901.mp3</li>
-         <li>Audio</li>
-         <li>An hour ago</li>
-         <li><a href="">&vellip;</a></li>
+         <li><a href="" class="document-item">&vellip;</a></li>
        </ul>
     </div>   
    </div>
